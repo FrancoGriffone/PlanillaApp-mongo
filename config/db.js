@@ -3,7 +3,7 @@ require('dotenv').config({path: '.env'});
 
 const conectarDB = async () => {
     try {
-        await mongoose.connect(mongodb+srv://FrancoGriffone:kaiin070@cluster0.okf5vxq.mongodb.net/planillaTrabajo, {
+        await mongoose.connect("mongodb+srv://FrancoGriffone:kaiin070@cluster0.okf5vxq.mongodb.net/planillaTrabajo", {
             useNewUrlParser: true,
             useUnifiedTopology: true,
             //useFindAndModify: false //no me funciona
